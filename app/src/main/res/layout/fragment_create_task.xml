@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTaskFragment">
+
+    <EditText
+        android:id="@+id/createTaskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:hint="Название:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/creaeteTaskQuestion"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Вопрос:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskName" />
+
+    <EditText
+        android:id="@+id/createTaskAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Ответ:"
+        app:layout_constraintEnd_toEndOf="@+id/creaeteTaskQuestion"
+        app:layout_constraintStart_toStartOf="@+id/creaeteTaskQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/creaeteTaskQuestion" />
+
+    <Button
+        android:id="@+id/createTaskPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="назад"
+        app:layout_constraintStart_toStartOf="@+id/createTaskAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskAnswer" />
+
+    <Button
+        android:id="@+id/createTaskNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="вперед"
+        app:layout_constraintEnd_toEndOf="@+id/createTaskAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskAnswer" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/createTaskNext"
+        app:layout_constraintStart_toStartOf="@+id/createTaskPrevious"
+        app:layout_constraintTop_toBottomOf="@+id/createTaskPrevious" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/create_task_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/createTaskCreateTest"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/createTaskCreateTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Добавить\nтест"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/createTaskNumQuestion"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="1/7"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/createTaskNext"
+        app:layout_constraintStart_toEndOf="@+id/createTaskPrevious"
+        app:layout_constraintTop_toTopOf="@+id/createTaskPrevious" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

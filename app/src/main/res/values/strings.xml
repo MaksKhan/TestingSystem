@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Testing system</string>
+    <string-array name="class_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="class_letters">
+        <item>А</item>
+        <item>Б</item>
+        <item>В</item>
+        <item>Г</item>
+        <item>Д</item>
+    </string-array>
+    <string-array name="subjects">
+        <item>Математика</item>
+        <item>Русский язык</item>
+        <item>Английский язык</item>
+        <item>Информатика</item>
+        <item>История</item>
+        <item>Обществознание</item>
+        <item>География</item>
+        <item>Литература</item>
+        <item>Физика</item>
+        <item>Химия</item>
+        <item>Специальный</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_teacher">TeacherActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="nav_header_role">Вы гуль</string>
+    <string name="nav_header_name">TextView</string>
+
+</resources>
